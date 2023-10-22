@@ -10,3 +10,5 @@ tools/bin
 tools/test
 dist
 spec/out
+
+node_modules/
