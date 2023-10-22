@@ -172,7 +172,6 @@
       }
     }
   },
-  "defaultProject": "ngx-soap-app",
   "cli": {
     "analytics": "88b524fc-7fbb-409d-94a4-e2bece002fd1"
   }
