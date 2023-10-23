@@ -12,3 +12,5 @@ dist
 spec/out
 
 node_modules/
+
+ngx-soap-0.7.0.tgz

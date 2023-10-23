@@ -30,7 +30,17 @@
               },
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "uuid/v4",
+              "url",
+              "assert",
+              "lodash",
+              "buffer",
+              "crypto-js/enc-base64",
+              "crypto-js/sha1",
+              "sax"
+            ]            
           },
           "configurations": {
             "production": {
@@ -134,7 +144,7 @@
           "options": {
             "main": "projects/ngx-soap/src/test.ts",
             "tsConfig": "projects/ngx-soap/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-soap/karma.conf.js"
+            "karmaConfig": "projects/ngx-soap/karma.conf.js"         
           }
         }
       }

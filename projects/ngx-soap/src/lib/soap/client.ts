@@ -9,7 +9,7 @@ import { findPrefix } from './utils';
 import * as _ from 'lodash';
 import uuid4 from 'uuid/v4';
 import { from, Observable, throwError } from 'rxjs';
-import { flatMap, map } from 'rxjs/operators';
+import { mergeMap, map } from 'rxjs/operators';
 import { Multipart } from './multipart';
 import { SoapAttachment } from './soapAttachment';
 
@@ -331,7 +331,7 @@ Client.prototype._invoke = function(method, args, location, options, extraHeader
                 return new Multipart().build(multipart, boundry);
             }
         }),
-        flatMap((body: any) =>
+        mergeMap((body: any) =>
             (<HttpClient>self.httpClient)
                 .post(location, body, {
                     headers: headers,
